@@ -37,6 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mysqli->close();
 
 }  else {
-    die('Not permited metody');
+    die('Not permited method!');
 }
 ?>
