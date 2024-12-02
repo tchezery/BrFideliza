@@ -117,7 +117,6 @@
                                     justify-content: space-around;
                                     align-items: center;">
                 <?php
-                // Exemplo de código para testar
                 echo '<p>Subscribed Section Active</p>';
                 ?>
             </div>
