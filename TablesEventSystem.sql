@@ -1,7 +1,5 @@
 CREATE DATABASE BrFideliza;
 USE BrFideliza;
-
-drop database brfideliza;
  
 CREATE TABLE participant (
 	id_participant INT auto_increment PRIMARY KEY,
@@ -20,8 +18,6 @@ CREATE TABLE administrator(
     phone VARCHAR (20),
     password VARCHAR(100) NOT NULL
 );
-
-select * from administrator;
 
 CREATE TABLE event(
 	id_event INT auto_increment PRIMARY KEY,
@@ -43,7 +39,7 @@ CREATE TABLE registration(
     qrcode VARCHAR(45),
     datetime_payment DATETIME,
     status VARCHAR(45),
-    ticket INT NOT NULL DEFAULT (FLOOR(RAND() * (8999 - 1223 + 1)) + 1000),
+    ticket INT NOT NULL,
     FOREIGN KEY (id_participant) REFERENCES participant (id_participant),
 	FOREIGN KEY (id_event) REFERENCES event (id_event)
 );
