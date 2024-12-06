@@ -1,3 +1,7 @@
-ATENTION: Not finished!!!
+ATENTION: Not finished!
 
-For work i use MySQL and XAMPP to server.
+
+
+For work:
+i use MySQL and XAMPP to server.
+Need review 
